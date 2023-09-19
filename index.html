@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia Treinar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ol>
+                <li>HOME</li>
+                <LI>SOBRE</LI>
+                <LI>PLANOS</LI>
+                <LI>TREINOS PERSONALIZADOS</LI>
+                <LI>CONTATOS</LI>
+                <LI>FOOTER</LI>
+            </ol>
+        </nav>
+    </header>
+
+    <main>
+        <div id="conheca">
+            <h1>ACADEMIA TREINAR</h1>
+            <h2>SOBRE</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod mi at metus consequat porta. Pellentesque in aliquet leo, a ultricies tellus. In vel lacus aliquet, molestie nunc ut, accumsan ipsum. Duis facilisis eu odio convallis maximus. Aenean nunc lorem, mattis fermentum feugiat eu, venenatis nec tellus. Praesent efficitur et diam a molestie. Quisque cursus erat leo. Integer consequat convallis magna eu iaculis. Ut fringilla non mi ac scelerisque. Suspendisse urna arcu, elementum eget velit id, sagittis facilisis augue.</p>
+            <p>Nullam in orci ut lectus commodo vehicula quis vitae sapien. Sed sed rhoncus enim. Sed eu mi ante. Praesent volutpat, sapien id venenatis luctus, turpis libero lobortis nibh, id rhoncus arcu turpis eget ex. Sed neque urna, fringilla nec imperdiet id, pulvinar ut velit. Sed arcu est, aliquet dignissim lorem vitae, finibus dignissim justo. Maecenas ultricies nibh et sapien commodo semper. Cras non mi id lacus bibendum rutrum a id metus.</p>
+        </div>
+
+        <div class="planos">
+            <h2>Conheça nossos planos</h2>
+
+            <div class="basico">
+                <h3>Plano Básico</h3>
+            </div>
+            <div class="vip">
+                <h3>Plano Vip</h3>
+            </div>
+            <div class="premium">
+                <h3>Plano Premium</h3>
+            </div>
+        </div>
+
+        <div class="personalizado">
+            <h2>Treinos personalizados</h2>
+            <p>Nós possuimos técnicos e professores prontos para criar treinos personalizados buscando melhores ganhos e que se adequem a você e a seus objetivos.</p>
+        </div>
+
+        <div class="contatos">
+            <form id="form">
+                <label for="nome"> Nome Completo</label>
+                <input type="text" id="nome" name="nome" maxlength="100"
+                    pattern="[a-z-A-Z-\s]{1,100}" title="Somente letras"
+                    required>
+
+                <label for="telefone">Telefone fixo ou Celular</label>
+                <input type="tel" id="telefone" name="telefone" 
+                    placeholder="(__) ____-____" pattern=".{14,}" maxlength="15"
+                    title="O número de telefone precisa ter pelo menos 10 dígitos"
+                    required>
+
+                <label for="email"> Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="numero"> Número</label>
+                <input type="number" id="numero" name="numero"
+                min="1" max="999" placeholder="De 1 a 999" required>
+        
+                <input class="button" type="submit" id="submit" name="submit"
+                value="Enviar">
+            </form>
+        </div>
+    </main>
+</body>
+</html>
