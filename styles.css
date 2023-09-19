@@ -1,12 +1,50 @@
 body {
     background: antiquewhite;
     font-family: "Inter";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main {
+    width: 70%;
 }
 h1 {
     font-size: 60px;
     margin: 30px 0 20px 0;
     text-align: center;
 }
+h2 {
+    margin: 75px 0px 30px 0px;
+    text-align: center;
+}
+p {
+    font-size: 18px;
+}
+/* ID's */
+
+
+/* PLANOS */
+.planos-conteudo {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.planos {
+    margin: 0px 50px;
+    background: #fff;
+    border-color: #000;
+    border: solid;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 12px 28px;
+}
+p.valor {
+    color: #156496;
+    font-size: 25px;
+    font-weight: bold;
+}
+
 /* FORMULÁRIO */
 form {
     display: flex;
@@ -18,7 +56,7 @@ label {
     font-weight: 600;
     margin: 15px 0 12px 0;
 }
-input#nome, input#telefone, input#email, input#numero {
+input#nome, input#telefone, input#email, input#text {
     border: solid 3px;
     font-size: 18px;
     padding: 10px;
@@ -71,5 +109,5 @@ input#nome, input#telefone, input#email, input#numero {
     }
     form {margin: 0% 10%;}
     label {font-size: 18px;}
-    input#nome, input#telefone, input#email, input#numero {font-size: 15px;}
+    input#nome, input#telefone, input#email, input#text {font-size: 15px;}
 }
